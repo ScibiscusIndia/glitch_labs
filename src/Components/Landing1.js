@@ -1,17 +1,17 @@
-import Spline_one from './Spline_ui/Ui_toggle';
-import Spline_1_con from './subpart/Spline_one_content';
+import SplineOne from './SplineUi/UiToggle';
+import Spline1Con from './subpart/SplineOneContent';
 
 export default function Landing1() {
     return (
       <div style={styles.root}>
         {/* Background */}
         <div style={styles.bg}>
-          <Spline_one />
+          <SplineOne />
         </div>
   
         {/* Overlay */}
         <div style={styles.overlay}>
-          <Spline_1_con />
+          <Spline1Con />
         </div>
       </div>
     );

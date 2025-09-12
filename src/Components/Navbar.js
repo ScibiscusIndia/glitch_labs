@@ -1,5 +1,4 @@
 // src/Components/Navbar.js
-import React from "react";
 import logo from "./assest/logo4.png"
 import { Navbar as BsNavbar, Nav, Container } from "react-bootstrap";
 import { Bell, Search } from "react-bootstrap-icons";
@@ -42,7 +41,7 @@ export default function AppNavbar() {
             <Nav.Link as={NavLink} to="/"  className="mx-lg-2">Home</Nav.Link>
             <Nav.Link href="https://scibiscusindia.github.io/Edge-main-site-Blog-Area/"  target="_blank"  className="mx-lg-2">Blog</Nav.Link>
             <Nav.Link href="#pricing" className="mx-lg-2">Pricing</Nav.Link>
-            <Nav.Link as={NavLink} to="/about_us"  className="mx-lg-2">About Us</Nav.Link>
+            <Nav.Link as={NavLink} to="/aboutUs"  className="mx-lg-2">About Us</Nav.Link>
           </Nav>
 
           {/* Desktop right - Icons */}

@@ -1,9 +1,9 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import ScrollFloat from '../reactbit_ui/scroll_down_text/Scroll_down_txt';
 import GradientText from '../reactbit_ui/gradtint';
 
 // Overlay.jsx
-export default function Spline_1_con() {
+export default function Spline1Con () {
     return (
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6">
         <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">

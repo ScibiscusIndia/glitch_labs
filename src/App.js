@@ -12,7 +12,7 @@ import PricingSection from './Components/pricing';
 import PortfolioSection from './Components/Portfolio';
 import ContactSection from './Components/Contactus';
 
-import About_us from './Components/Pages/About_us/About_us';
+import AboutUs from './Components/Pages/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
         } />
 
         {/* About Us Page */}
-        <Route path="/about_us" element={<About_us />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
     </Router>
   );
