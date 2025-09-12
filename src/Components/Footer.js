@@ -44,7 +44,7 @@ export default function FooterSection() {
           {/* Contact Info & Social */}
           <Col md={4}>
             <h6 className="fw-bold mb-3">Contact & Follow Us</h6>
-            <p>Email: info@edge_tech.com</p>
+            <p>Email: rajroshansharma5@gmail.com</p>
             <p>Phone: +91 9153316977</p>
             <div className="d-flex gap-3 mt-3">
               <a href="#!" className="text-light fs-4"><Facebook /></a>
@@ -57,7 +57,7 @@ export default function FooterSection() {
 
         <hr className="border-light" />
         <p className="text-center mb-0">
-          &copy; {new Date().getFullYear()} YourCompany. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Glitch_Labs. All Rights Reserved.
         </p>
       </Container>
     </footer>

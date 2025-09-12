@@ -24,7 +24,7 @@ export default function IntroSection() {
               {/* <Button variant="primary" size="lg" className="me-3">
                 Get Started
               </Button> */}
-              <Button variant="outline-dark" size="lg" className="me-3">
+              <Button variant="outline-dark"  href="/#ContactUs" size="lg" className="me-3">
                  <GradientText
                         colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                         animationSpeed={3}

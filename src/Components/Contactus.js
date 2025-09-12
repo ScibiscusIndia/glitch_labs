@@ -31,7 +31,7 @@ export default function ContactSection() {
               <Card.Body>
                 <h5 className="fw-bold mb-3">Contact Information</h5>
                 <p>
-                  <strong>Email:</strong> info@edge_tech.com
+                  <strong>Email:</strong> rajroshanshrma5@gmail.com
                 </p>
                 <p>
                   <strong>Phone:</strong> +91 9153316977
