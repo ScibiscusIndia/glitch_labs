@@ -47,10 +47,10 @@ export default function FooterSection() {
             <p>Email: info@edge_tech.com</p>
             <p>Phone: +91 9153316977</p>
             <div className="d-flex gap-3 mt-3">
-              <a href="#" className="text-light fs-4"><Facebook /></a>
-              <a href="#" className="text-light fs-4"><Twitter /></a>
-              <a href="#" className="text-light fs-4"><Instagram /></a>
-              <a href="#" className="text-light fs-4"><Linkedin /></a>
+              <a href="#!" className="text-light fs-4"><Facebook /></a>
+              <a href="#!" className="text-light fs-4"><Twitter /></a>
+              <a href="#!" className="text-light fs-4"><Instagram /></a>
+              <a href="#!" className="text-light fs-4"><Linkedin /></a>
             </div>
           </Col>
         </Row>

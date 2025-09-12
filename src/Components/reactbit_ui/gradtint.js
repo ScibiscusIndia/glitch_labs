@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import './GradientText.css';
 
 export default function GradientText({
@@ -22,15 +21,3 @@ export default function GradientText({
     </div>
   );
 }
-
-
-// usage of the above Component
-
-{/* <GradientText
-colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-animationSpeed={3}
-showBorder={false}
-className="custom-class"
->
-Add a splash of color!
-</GradientText> */}
