@@ -16,7 +16,7 @@ const technologies = [
   { name: "AWS", logo: "https://cdn.worldvectorlogo.com/logos/amazon-web-services-1.svg" },
   { name: "Next.js", logo: "https://cdn.worldvectorlogo.com/logos/next-js.svg" },
   { name: "GraphQL", logo: "https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg" },
-  { name: "JavaScript", logo: "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" },
+  { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?20120221235433" },
   { name: "Figma", logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" },
   { name: "Sass", logo: "https://cdn.worldvectorlogo.com/logos/sass-1.svg" }
 ];

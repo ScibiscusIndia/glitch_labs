@@ -7,7 +7,6 @@ import IntroSection from './Components/Intro';
 import WhyChooseUs from './Components/WhyChoseUs';
 import ServicesSection from './Components/Services';
 import TechnologiesSection from './Components/Tech';
-import Landing1 from './Components/Landing1';
 import PricingSection from './Components/pricing';
 import PortfolioSection from './Components/Portfolio';
 import ContactSection from './Components/Contactus';
@@ -27,7 +26,6 @@ function App() {
             <WhyChooseUs/>
             <ServicesSection/>
             <TechnologiesSection/>
-            <Landing1/>
             <PricingSection/>
             <PortfolioSection/>
             <ContactSection/>
