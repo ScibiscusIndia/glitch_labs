@@ -20,7 +20,7 @@ export default function PortfolioSection() {
       title: "Portfolio Site",
       img: p3,
       desc: "Full-fledge site for showcasing your creative work through portfolios.",
-      link: "https://scibiscusindia.github.io/eportfolio_one/",
+      link: "https://joe-design-playground.lovable.app/",
     },
     {
       title: "Company Website",
@@ -72,6 +72,7 @@ export default function PortfolioSection() {
                   <Card.Text className="text-muted">{project.desc}</Card.Text>
                   <Button
                     href={project.link}
+                    target="_blank"
                     variant="primary"
                     className="mt-auto"
                   >

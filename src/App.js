@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Navbar from './Components/Navbar';
 import FooterSection from './Components/Footer';
 import IntroSection from './Components/Intro';
@@ -10,8 +9,8 @@ import TechnologiesSection from './Components/Tech';
 import PricingSection from './Components/pricing';
 import PortfolioSection from './Components/Portfolio';
 import ContactSection from './Components/Contactus';
-
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
+import Landing2 from './Components/Landing2';
 
 function App() {
   return (
@@ -26,6 +25,7 @@ function App() {
             <WhyChooseUs/>
             <ServicesSection/>
             <TechnologiesSection/>
+            <Landing2/>
             <PricingSection/>
             <PortfolioSection/>
             <ContactSection/>
