@@ -144,7 +144,7 @@ const PrivacyPolicy = () => {
                   If you have any questions regarding this Privacy Policy or
                   Refund Policy, please contact us at:
                   <br />
-                  <strong>Email:</strong> support@yourdomain.com
+                  <strong>Email:</strong> rajroshansharma55@gmail.com
                 </p>
               </section>
             </div>
