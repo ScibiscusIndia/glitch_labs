@@ -39,7 +39,7 @@ export default function AppNavbar() {
           {/* Center - Menu */}
           <Nav className="mx-auto text-center my-2 my-lg-0">
             <Nav.Link as={NavLink} to="/"  className="mx-lg-2">Home</Nav.Link>
-            <Nav.Link href="https://scibiscusindia.github.io/Edge-main-site-Blog-Area/"  target="_blank"  className="mx-lg-2">Blog</Nav.Link>
+            <Nav.Link as={NavLink} to="/privacypolicy"  className="mx-lg-2">Privacy Policy</Nav.Link>
             <Nav.Link href="#pricing" className="mx-lg-2">Pricing</Nav.Link>
             <Nav.Link as={NavLink} to="/aboutUs"  className="mx-lg-2">About Us</Nav.Link>
           </Nav>

@@ -5,26 +5,19 @@ import { Container, Carousel } from "react-bootstrap";
 export default function TestimonialSection() {
   const testimonials = [
     {
-      name: "Rajesh Kumar",
-      role: "CEO, TechCorp",
-      feedback:
-        "Amazing work! Our website traffic increased dramatically after their redesign. Highly professional and responsive team.",
+      name: "Ronit",
+      role: "CEO, The Wood House",
+      feedback: "Amazing work! Our Restro bar traffic increased dramatically after their redesign. Highly professional and responsive team.",
       img: "https://via.placeholder.com/80", // Replace with client photo
     },
     {
-      name: "Anita Sharma",
-      role: "Founder, EcomMart",
+      name: "Abhishek Kapse",
+      role: "Founder, AK automexa",
       feedback:
-        "Their AI-based web app solution helped automate our operations efficiently. Excellent support and communication!",
+        "Their team designed and developed our website efficiently and on time. Excellent support and communication!",
       img: "https://via.placeholder.com/80",
     },
-    {
-      name: "Vikram Singh",
-      role: "Manager, StartUp Solutions",
-      feedback:
-        "Professional team, delivered the project on time. SEO and performance improvements really boosted our website ranking.",
-      img: "https://via.placeholder.com/80",
-    },
+   
   ];
 
   return (
@@ -41,12 +34,12 @@ export default function TestimonialSection() {
           {testimonials.map((testimonial, index) => (
             <Carousel.Item key={index}>
               <div className="d-flex flex-column align-items-center text-center px-3">
-                <img
+                {/* <img
                   src={testimonial.img}
                   alt={testimonial.name}
                   className="rounded-circle mb-3"
                   style={{ width: "80px", height: "80px", objectFit: "cover" }}
-                />
+                /> */}
                 <p className="fst-italic text-muted">{`"${testimonial.feedback}"`}</p>
                 <h5 className="fw-bold mt-2">{testimonial.name}</h5>
                 <p className="text-primary mb-0">{testimonial.role}</p>

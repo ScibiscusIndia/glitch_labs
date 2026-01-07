@@ -1,0 +1,137 @@
+/* Main wrapper for the page */
+.privacy-wrapper {
+  min-height: 100vh;
+  background-color: #f9fafb; /* gray-50 */
+  padding: 3rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* The main card container */
+.privacy-card {
+  max-width: 56rem; /* max-w-4xl */
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+}
+
+/* Header section */
+.privacy-header {
+  background-color: #0f172a; /* slate-900 */
+  padding: 2rem;
+}
+
+.privacy-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.privacy-subtitle {
+  margin-top: 0.5rem;
+  color: #cbd5e1; /* slate-300 */
+  font-size: 1rem;
+}
+
+/* Content area */
+.privacy-content {
+  padding: 2rem;
+  color: #374151; /* gray-700 */
+  line-height: 1.625;
+}
+
+/* Typography */
+.privacy-content section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+  color: #0f172a; /* slate-900 */
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.privacy-content p {
+  margin-bottom: 1rem;
+}
+
+.privacy-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.privacy-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Highlight Box (Client Credentials) */
+.highlight-box {
+  background-color: #eff6ff; /* blue-50 */
+  border-left: 4px solid #3b82f6; /* blue-500 */
+  padding: 1rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  color: #1e3a8a; /* blue-900 */
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.highlight-text {
+  color: #1e40af; /* blue-800 */
+  font-size: 0.875rem; /* text-sm */
+  margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-box {
+  font-style: normal;
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.contact-detail {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.privacy-link {
+  color: #2563eb; /* blue-600 */
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+  .privacy-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .privacy-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

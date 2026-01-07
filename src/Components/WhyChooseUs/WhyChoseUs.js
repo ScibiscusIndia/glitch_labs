@@ -1,9 +1,12 @@
 // src/Components/WhyChooseUs.js
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { CheckCircle, Award, ShieldLock, Lightning } from "react-bootstrap-icons";
+import "./WhyChooseUs.css"; // 👈 Add a CSS file for animation styles
 
 export default function WhyChooseUs() {
+  const cardsRef = useRef([]);
+
   const features = [
     {
       icon: <CheckCircle size={40} className="text-primary" />,
@@ -27,6 +30,30 @@ export default function WhyChooseUs() {
     }
   ];
 
+  // 👇 Animation logic
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => {
+      cardsRef.current.forEach((card) => {
+        if (card) observer.unobserve(card);
+      });
+    };
+  }, []);
+
   return (
     <section className="py-5 bg-white">
       <Container>
@@ -36,15 +63,18 @@ export default function WhyChooseUs() {
             We stand out because of our commitment, quality, and results.
           </p>
         </div>
+
         <Row className="g-4">
           {features.map((item, index) => (
             <Col xs={6} md={6} lg={3} key={index}>
-              <Card className="h-100 shadow-sm border-0 text-center p-4 hover-effect d-flex flex-column align-items-center justify-content-start">
+              <Card
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="why-card h-100 shadow-sm border-0 text-center p-4 hover-effect d-flex flex-column align-items-center justify-content-start"
+              >
                 <div className="mb-3 d-flex justify-content-center align-items-center">
                   {item.icon}
                 </div>
                 <Card.Title className="fw-semibold">{item.title}</Card.Title>
-                {/* Hide description on small screens */}
                 <Card.Text className="text-muted d-none d-md-block">
                   {item.desc}
                 </Card.Text>

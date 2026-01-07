@@ -3,14 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar';
 import FooterSection from './Components/Footer';
 import IntroSection from './Components/Intro';
-import WhyChooseUs from './Components/WhyChoseUs';
-import ServicesSection from './Components/Services';
 import TechnologiesSection from './Components/Tech';
 import PricingSection from './Components/pricing';
 import PortfolioSection from './Components/Portfolio';
 import ContactSection from './Components/Contactus';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
-import Landing2 from './Components/Landing2';
+import WhyChooseUs from './Components/WhyChooseUs/WhyChoseUs';
+import ServicesSection from './Components/Services/Services';
+import Testimonial from './Components/Testimonial';
+import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
 
 function App() {
   return (
@@ -25,13 +26,16 @@ function App() {
             <WhyChooseUs/>
             <ServicesSection/>
             <TechnologiesSection/>
-            <Landing2/>
             <PricingSection/>
             <PortfolioSection/>
+            <Testimonial/>
             <ContactSection/>
             <FooterSection/>
           </>
         } />
+
+        {/* privacy policy page */}
+        <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
 
         {/* About Us Page */}
         <Route path="/aboutUs" element={<AboutUs />} />

@@ -1,9 +1,12 @@
 // src/Components/ServicesSection.js
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Laptop, Cart, Building, Cpu, Search, Gear } from "react-bootstrap-icons";
+import "./ServicesSection.css"; // 👈 Import the CSS file
 
 export default function ServicesSection() {
+  const cardsRef = useRef([]);
+
   const services = [
     {
       icon: <Laptop size={40} className="text-primary" />,
@@ -37,6 +40,32 @@ export default function ServicesSection() {
     }
   ];
 
+  // 👇 Animation logic
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add("show");
+            }, i * 150); // staggered animation delay
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => {
+      cardsRef.current.forEach((card) => {
+        if (card) observer.unobserve(card);
+      });
+    };
+  }, []);
+
   return (
     <section className="py-5 bg-light">
       <Container>
@@ -49,12 +78,14 @@ export default function ServicesSection() {
         <Row className="g-4">
           {services.map((service, index) => (
             <Col xs={6} md={6} lg={4} key={index}>
-              <Card className="h-100 text-center p-4 shadow-sm border-0 hover-effect d-flex flex-column align-items-center justify-content-start">
+              <Card
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="service-card h-100 text-center p-4 shadow-sm border-0 hover-effect d-flex flex-column align-items-center justify-content-start"
+              >
                 <div className="mb-3 d-flex justify-content-center align-items-center">
                   {service.icon}
                 </div>
                 <Card.Title className="fw-semibold">{service.title}</Card.Title>
-                {/* Hide description on mobile */}
                 <Card.Text className="text-muted d-none d-md-block">
                   {service.desc}
                 </Card.Text>
