@@ -42,6 +42,7 @@ export default function ServicesSection() {
 
   // 👇 Animation logic
   useEffect(() => {
+    const cards = cardsRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, i) => {
@@ -55,12 +56,12 @@ export default function ServicesSection() {
       { threshold: 0.2 }
     );
 
-    cardsRef.current.forEach((card) => {
+    cards.forEach((card) => {
       if (card) observer.observe(card);
     });
 
     return () => {
-      cardsRef.current.forEach((card) => {
+      cards.forEach((card) => {
         if (card) observer.unobserve(card);
       });
     };
