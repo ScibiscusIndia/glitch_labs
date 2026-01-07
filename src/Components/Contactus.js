@@ -37,7 +37,7 @@ export default function ContactSection() {
                   <strong>Phone:</strong> +91 9153316977
                 </p>
                 <p>
-                  <strong>Address:</strong> 123, MG Road, Bangalore, India
+                  <strong>Address:</strong> Electronic city phase 1, Doddathoguru, Bangalore, India 560100
                 </p>
                 <p>
                   <strong>Working Hours:</strong> Mon - Sat, 10:00 AM - 6:00 PM
