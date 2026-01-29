@@ -1,10 +1,11 @@
 // src/Components/IntroSection.js
-import React, { useState } from "react";
+import { useState } from "react";
 import intro_pic1 from "./assest/intro_pic1.png";
 import GradientText from "./reactbit_ui/gradtint";
-import { Container, Row, Col, Button, Modal } from "react-bootstrap";
+import { Container, Row, Col, Button, Modal, Nav } from "react-bootstrap";
 import ContactPopup from "./Contact3";
-
+import { NavLink } from "react-router-dom";
+import './Shared.css';
 export default function IntroSection() {
   // 🔹 Modal State
   const [showModal, setShowModal] = useState(false);
@@ -29,7 +30,7 @@ export default function IntroSection() {
                 together.
               </p>
 
-              <div className="mt-4">
+              <div className="mt-4 d-flex ">
                 <Button
                   variant="outline-dark"
                   size="lg"
@@ -45,6 +46,9 @@ export default function IntroSection() {
                     Contact Us
                   </GradientText>
                 </Button>
+                <Nav.Link as={NavLink} to="/aboutUs" className="mx-lg-2 mt-2 fs-5 nav-underline">
+                  About Us
+                </Nav.Link>
               </div>
             </Col>
 

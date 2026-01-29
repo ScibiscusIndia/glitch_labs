@@ -1,9 +1,8 @@
 // src/Components/Navbar.js
-import logo from "./assest/logo4.png"
-import { Navbar as BsNavbar, Nav, Container } from "react-bootstrap";
+import logo from "./assest/logo4.png";
+import { Navbar as BsNavbar, Nav, Container, Button } from "react-bootstrap";
 import { Bell, Search } from "react-bootstrap-icons";
 import { NavLink } from "react-router-dom";
-
 
 export default function AppNavbar() {
   return (
@@ -12,14 +11,10 @@ export default function AppNavbar() {
         {/* Left - Logo */}
         <BsNavbar.Brand href="#">
           <img
-            src={logo}// replace with your logo
+            src={logo}
             alt="Logo"
             className="d-inline-block align-top"
-            style={{
-              height: "40px",
-              width: "auto",
-              backgroundSize: "cover"
-            }} // custom width
+            style={{ height: "40px", width: "auto" }}
           />
         </BsNavbar.Brand>
 
@@ -38,27 +33,45 @@ export default function AppNavbar() {
         <BsNavbar.Collapse id="main-nav">
           {/* Center - Menu */}
           <Nav className="mx-auto text-center my-2 my-lg-0">
-            <Nav.Link as={NavLink} to="/"  className="mx-lg-2">Home</Nav.Link>
-            <Nav.Link as={NavLink} to="/privacypolicy"  className="mx-lg-2">Privacy Policy</Nav.Link>
-            <Nav.Link href="#pricing" className="mx-lg-2">Pricing</Nav.Link>
-            <Nav.Link as={NavLink} to="/aboutUs"  className="mx-lg-2">About Us</Nav.Link>
+            <Nav.Link as={NavLink} to="/" className="mx-lg-2">
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/privacypolicy" className="mx-lg-2">
+              Privacy Policy
+            </Nav.Link>
+            <Nav.Link href="#pricing" className="mx-lg-2">
+              Pricing
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/CareerPage" className="mx-lg-2">
+              Career
+            </Nav.Link>
+
+            {/* Mobile App Services Button */}
+            <div className="d-lg-none mt-3">
+              <Button variant="primary" size="sm" href="#app-services">
+                App Services
+              </Button>
+            </div>
           </Nav>
 
-          {/* Desktop right - Icons */}
+          {/* Desktop right - Button + Icon */}
+   
           <div className="d-none d-lg-flex align-items-center">
-            <Nav.Link href="#notifications" className="me-3 p-0">
+            <Button
+              variant="outline-primary"
+              size="sm"
+              className="me-3 app-services-btn"
+              href="app-services"
+            >
+              App Services
+          </Button>
+
+            <Nav.Link href="#notifications" className="p-0">
               <Bell size={20} />
-            </Nav.Link>
-            <Nav.Link href="#search" className="p-0">
-              <Search size={20} />
             </Nav.Link>
           </div>
         </BsNavbar.Collapse>
       </Container>
     </BsNavbar>
-
-
-
-
   );
 }

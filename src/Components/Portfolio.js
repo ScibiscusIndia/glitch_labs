@@ -83,6 +83,16 @@ export default function PortfolioSection() {
             </Col>
           ))}
         </Row>
+        {/* 🔽 Explore More Button */}
+      <div className="text-center mt-5">
+        <Button
+          variant="outline-primary"
+          size="lg"
+          href="PorfolioSync"   // or "/portfolio" or external link
+        >
+          Explore More Projects
+        </Button>
+        </div>
       </Container>
     </section>
   );

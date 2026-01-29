@@ -1,21 +1,59 @@
 // src/Components/TestimonialSection.js
-import React from "react";
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Carousel, Row, Col } from "react-bootstrap";
 
+
+
+/* Main Section */
 export default function TestimonialSection() {
+  return (
+    <div className="py-5 bg-white">
+      <Container>
+        <Row className="align-items-center">
+
+          {/* Left Content */}
+          <Col lg={4} className="mb-4 mb-lg-0">
+            <p className="text-uppercase text-muted mb-2">
+              Testimonials
+            </p>
+
+            <h2 className="fw-bold mb-3">
+              What Our Clients Say
+            </h2>
+
+            <p className="text-muted">
+              We are committed to providing reliable, transparent, and effective
+              legal services. Here’s what our clients say about their experience
+              with our law firm.
+            </p>
+          </Col>
+
+          {/* Right Slider */}
+          <Col lg={8}>
+            <SliderTestimonial/>
+          </Col>
+
+        </Row>
+      </Container>
+    </div>
+  );
+}
+
+
+
+
+
+// slider function
+function SliderTestimonial() {
   const testimonials = [
     {
       name: "Ronit",
       role: "CEO, The Wood House",
-      feedback: "Amazing work! Our Restro bar traffic increased dramatically after their redesign. Highly professional and responsive team.",
-      img: "https://via.placeholder.com/80", // Replace with client photo
+      feedback: "Amazing work! Our restro bar traffic increased dramatically after their redesign. The team was highly professional, responsive, and attentive to our requirements, delivering results that exceeded our expectations.",
     },
     {
       name: "Abhishek Kapse",
       role: "Founder, AK automexa",
-      feedback:
-        "Their team designed and developed our website efficiently and on time. Excellent support and communication!",
-      img: "https://via.placeholder.com/80",
+      feedback:"Their team designed and developed our website efficiently and delivered it on time. Throughout the process, they provided excellent support and maintained clear, consistent communication, making the entire experience seamless and hassle-free.",
     },
    
   ];
@@ -23,12 +61,7 @@ export default function TestimonialSection() {
   return (
     <section className="py-5 bg-light" id="testimonials">
       <Container>
-        <div className="text-center mb-5">
-          <h2 className="fw-bold">What Our Clients Say</h2>
-          <p className="text-muted">
-            Testimonials from our satisfied clients who trusted our services.
-          </p>
-        </div>
+       
 
         <Carousel indicators={false} interval={5000}>
           {testimonials.map((testimonial, index) => (

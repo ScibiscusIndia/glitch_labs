@@ -43,7 +43,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-5 bg-light" id="pricing">
+    <section className="py-5 bg-light" id="pricing"  style={{ scrollMarginTop: "70px" }}>
       <Container>
         <div className="text-center mb-5">
           <h2 className="fw-bold">Our Pricing Plans</h2>
@@ -55,7 +55,7 @@ export default function PricingSection() {
           {plans.map((plan, index) => (
             <Col md={4} key={index}>
               <Card
-                className={`h-100 shadow-lg border-0 ${
+                className={`h-100 shadow-sm border-0 ${
                   plan.highlight ? "pricing-highlight" : ""
                 }`}
               >
