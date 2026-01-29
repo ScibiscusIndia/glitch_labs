@@ -61,7 +61,7 @@ export default function AppNavbar() {
               variant="outline-primary"
               size="sm"
               className="me-3 app-services-btn"
-              href="app-services"
+              href="/AppServices"
             >
               App Services
             </Button>
