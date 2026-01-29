@@ -48,14 +48,14 @@ export default function AppNavbar() {
 
             {/* Mobile App Services Button */}
             <div className="d-lg-none mt-3">
-              <Button variant="primary" size="sm" href="#app-services">
+              <Nav.Link as={NavLink} to="/AppServices" variant="primary" size="sm" >
                 App Services
-              </Button>
+              </Nav.Link>
             </div>
           </Nav>
 
           {/* Desktop right - Button + Icon */}
-   
+
           <div className="d-none d-lg-flex align-items-center">
             <Button
               variant="outline-primary"
@@ -64,7 +64,7 @@ export default function AppNavbar() {
               href="app-services"
             >
               App Services
-          </Button>
+            </Button>
 
             <Nav.Link href="#notifications" className="p-0">
               <Bell size={20} />

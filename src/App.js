@@ -12,9 +12,9 @@ import WhyChooseUs from './Components/WhyChooseUs/WhyChoseUs';
 import ServicesSection from './Components/Services/Services';
 import Testimonial from './Components/Testimonial';
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
-import MoreProject from './Components/MoreProjects/MoreProj';
 import PortfolioSectionExt from './Components/ExplorePortfolio/ExplorePort';
 import InternshipCard from './Components/Career/CareerPage';
+import MoreProject from './Components/MoreProjects/AppServices';
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
 
         {/* explore more projects */}
-        <Route path='/app-services' element={<MoreProject/>}/>
+        <Route path='/AppServices' element={<MoreProject/>}/>
 
         {/* explore more portfolio */}
         <Route path='/PorfolioSync' element={<PortfolioSectionExt/>}/>
