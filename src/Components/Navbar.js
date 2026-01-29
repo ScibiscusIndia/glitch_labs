@@ -58,10 +58,10 @@ export default function AppNavbar() {
 
           <div className="d-none d-lg-flex align-items-center">
             <Button
-              variant="outline-primary"
+              as={NavLink}
+              to="/AppServices"
+              variant="primary"
               size="sm"
-              className="me-3 app-services-btn"
-              href="/AppServices"
             >
               App Services
             </Button>
