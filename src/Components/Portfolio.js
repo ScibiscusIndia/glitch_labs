@@ -6,7 +6,8 @@ import p3 from "./assest/p3.png"
 import p4 from "./assest/p4.png"
 import p7 from "./assest/p7.png"
 import p6 from "./assest/p6.png"
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button,  } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 export default function PortfolioSection() {
   const projects = [
@@ -84,14 +85,15 @@ export default function PortfolioSection() {
           ))}
         </Row>
         {/* 🔽 Explore More Button */}
-      <div className="text-center mt-5">
-        <Button
-          variant="outline-primary"
-          size="lg"
-          href="PorfolioSync"   // or "/portfolio" or external link
-        >
-          Explore More Projects
-        </Button>
+        <div className="text-center mt-5">
+          <Button
+            as={NavLink}
+            to="/ExplorePort"
+            variant="primary"
+            size="sm"
+          >
+            Explore more projects
+          </Button>
         </div>
       </Container>
     </section>

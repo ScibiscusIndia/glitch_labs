@@ -47,7 +47,7 @@ function App() {
         <Route path='/AppServices' element={<MoreProject/>}/>
 
         {/* explore more portfolio */}
-        <Route path='/PorfolioSync' element={<PortfolioSectionExt/>}/>
+        <Route path='/ExplorePort' element={<PortfolioSectionExt/>}/>
 
         {/* career page */}
         <Route path='/CareerPage' element={<InternshipCard/>}/>
