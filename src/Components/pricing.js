@@ -46,7 +46,11 @@ export default function PricingSection() {
     <section className="py-5 bg-light" id="pricing"  style={{ scrollMarginTop: "70px" }}>
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Our Pricing Plans</h2>
+          <h2 style={{
+            fontSize: "2.5rem",
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>Our Pricing Plans</h2>
           <p className="text-muted">
             Affordable rates for websites and web apps in India. Choose the plan that fits your needs.
           </p>

@@ -59,7 +59,11 @@ export default function WhyChooseUs() {
     <section className="py-5 bg-white">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Why Choose Us</h2>
+          <h2 style={{
+            fontSize: "2.5rem",
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>Why Choose Us</h2>
           <p className="text-muted">
             We stand out because of our commitment, quality, and results.
           </p>

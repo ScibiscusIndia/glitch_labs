@@ -6,7 +6,7 @@ import p3 from "./assest/p3.png"
 import p4 from "./assest/p4.png"
 import p7 from "./assest/p7.png"
 import p6 from "./assest/p6.png"
-import { Container, Row, Col, Card, Button,  } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 export default function PortfolioSection() {
@@ -53,7 +53,11 @@ export default function PortfolioSection() {
     <section className="py-5 bg-white" id="portfolio">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Our Portfolio</h2>
+          <h2 style={{
+            fontSize: "2.5rem",
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>Our Portfolio</h2>
           <p className="text-muted">
             Some of the projects we have built for our clients. Click to view more details.
           </p>
@@ -89,11 +93,18 @@ export default function PortfolioSection() {
           <Button
             as={NavLink}
             to="/ExplorePort"
-            variant="primary"
-            size="sm"
+            size="lg"                  // 👈 bigger size
+            style={{
+              backgroundColor: "white",
+              color: "#0d6efd",
+              border: "2px solid #0d6efd",
+              fontWeight: 600,
+              padding: "0.6rem 1.8rem",
+            }}
           >
             Explore more projects
           </Button>
+
         </div>
       </Container>
     </section>

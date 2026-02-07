@@ -44,7 +44,7 @@ export default function FooterSection() {
           {/* Contact Info & Social */}
           <Col md={4}>
             <h6 className="fw-bold mb-3">Contact & Follow Us</h6>
-            <p>Email: rajroshansharma5@gmail.com</p>
+            <p>Email: support@glitchlabs.online</p>
             <p>Phone: +91 9153316977</p>
             <div className="d-flex gap-3 mt-3">
               <a href="#!" className="text-light fs-4"><Facebook /></a>

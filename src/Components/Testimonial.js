@@ -12,7 +12,11 @@ export default function TestimonialSection() {
 
           {/* Left Content */}
           <Col lg={4} className="mb-4 mb-lg-0">
-            <p className="text-uppercase text-muted mb-2">
+            <p className="text-uppercase text-muted mb-2" style={{
+            fontSize: "2.5rem",
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>
               Testimonials
             </p>
 

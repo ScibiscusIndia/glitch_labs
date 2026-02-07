@@ -21,9 +21,41 @@ export default function IntroSection() {
           <Row className="align-items-center">
             {/* Left Side - Text */}
             <Col md={6} className="text-center text-md-start">
-              <h1 className="display-4 fw-bold">
-                Welcome to <span className="text-primary">Glitch_Labs</span>
+              <h1
+                className="fw-bold"
+                style={{ fontFamily: "'Poppins', sans-serif" }}
+              >
+
+                {/* <p className="text-muted"
+                style={{
+                    fontSize: "1rem",
+                    fontWeight: 400,
+                  }}>
+                  World-class, professional, and optimized websites—built with efficiency.
+                </p> */}
+
+                <span
+                  style={{
+                    fontSize: "1.8rem",
+                    fontWeight: 400,
+                    marginRight: "0.5rem",
+                  }}
+                >
+                  Welcome to
+                </span>
+
+                <span
+                  className="text-primary"
+                  style={{
+                    fontSize: "3.5rem",
+                    fontWeight: 700,
+                    letterSpacing: "-0.03em",
+                  }}
+                >
+                  Glitch_Labs
+                </span>
               </h1>
+
               <p className="lead text-muted mt-3">
                 We help businesses grow with modern web solutions, clean design,
                 and cutting-edge technology. Let’s build something amazing
@@ -72,7 +104,7 @@ export default function IntroSection() {
         <Modal.Body>
           {/* ✅ Embed your custom form component here */}
           {/* Example: <ContactForm /> */}
-          <ContactPopup/>
+          <ContactPopup />
         </Modal.Body>
       </Modal>
     </>

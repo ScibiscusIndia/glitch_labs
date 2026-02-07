@@ -60,8 +60,14 @@ export default function AppNavbar() {
             <Button
               as={NavLink}
               to="/AppServices"
-              variant="primary"
               size="sm"
+              style={{
+                backgroundColor: "white",
+                color: "#0d6efd",
+                border: "2px solid #0d6efd",
+                fontWeight: 500,
+                marginRight: "12px",   // 👈 spacing added
+              }}
             >
               App Services
             </Button>
@@ -70,6 +76,7 @@ export default function AppNavbar() {
               <Bell size={20} />
             </Nav.Link>
           </div>
+
         </BsNavbar.Collapse>
       </Container>
     </BsNavbar>

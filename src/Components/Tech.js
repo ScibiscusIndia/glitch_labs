@@ -26,7 +26,11 @@ export default function TechnologiesSection() {
     <section className="py-5 bg-white">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Technologies We Use</h2>
+          <h2 style={{
+            fontSize: "2.5rem",
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>Technologies We Use</h2>
           <p className="text-muted">
             We leverage modern technologies to build websites, web apps, and AI-powered applications.
           </p>

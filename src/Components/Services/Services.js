@@ -68,10 +68,14 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5 bg-light" id="services">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Our Services</h2>
+          <h2 style={{
+            fontSize: "2.5rem", 
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>Our Services</h2>
           <p className="text-muted">
             We provide a wide range of services to help your business grow online.
           </p>

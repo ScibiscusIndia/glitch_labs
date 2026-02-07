@@ -8,7 +8,11 @@ export default function ContactSection() {
     <section className="py-5 bg-white" id="contact">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Contact Us</h2>
+          <h2 style={{
+            fontSize: "2.5rem",
+            fontWeight: 400,
+            marginRight: "0.5rem",
+          }}>Contact Us</h2>
           <p className="text-muted">
             Get in touch with us for projects, queries or collaborations.
           </p>
@@ -31,7 +35,7 @@ export default function ContactSection() {
               <Card.Body>
                 <h5 className="fw-bold mb-3">Contact Information</h5>
                 <p>
-                  <strong>Email:</strong> rajroshanshrma5@gmail.com
+                  <strong>Email:</strong> support@glitchlabs.online
                 </p>
                 <p>
                   <strong>Phone:</strong> +91 9153316977

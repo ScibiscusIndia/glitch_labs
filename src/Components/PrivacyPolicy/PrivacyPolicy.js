@@ -144,7 +144,7 @@ const PrivacyPolicy = () => {
                   If you have any questions regarding this Privacy Policy or
                   Refund Policy, please contact us at:
                   <br />
-                  <strong>Email:</strong> rajroshansharma55@gmail.com
+                  <strong>Email:</strong> support@glitchlabs.online
                 </p>
               </section>
             </div>

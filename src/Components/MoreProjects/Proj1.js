@@ -9,7 +9,7 @@ export default function ProjectCardAcepodium() {
 
   return (
     <Card className="shadow-sm border-0" style={{ maxWidth: "600px" }}>
-      
+
       {/* Image Wrapper */}
       <div style={{ position: "relative" }}>
         <Card.Img
@@ -46,8 +46,7 @@ export default function ProjectCardAcepodium() {
       <Card.Body className="text-center px-4 pb-4">
         <h4 className="fw-bold mb-2">Acepodium</h4>
         <p className="text-muted mb-3">
-          A clean, modern, and fully responsive website designed to showcase
-          services and digital solutions with clarity.
+          An AI-powered app that predicts winning horses using advanced data analysis and performance insights.
         </p>
 
         <Button
