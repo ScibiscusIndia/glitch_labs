@@ -62,7 +62,7 @@ export default function IntroSection() {
                 together.
               </p>
 
-              <div className="mt-4 d-flex ">
+              <div className="mt-4 d-flex justify-content-center justify-content-md-start align-items-center flex-wrap">
                 <Button
                   variant="outline-dark"
                   size="lg"
