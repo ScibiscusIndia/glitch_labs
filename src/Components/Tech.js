@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 // You can replace these URLs with your own tech logos
 const technologies = [
-  { name: "React", logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  { name: "React", logo: "https://icon.icepanel.io/Technology/svg/React.svg" },
   { name: "Node.js", logo: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
   { name: "Bootstrap", logo: "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" },
   { name: "MongoDB", logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
@@ -18,6 +18,8 @@ const technologies = [
   { name: "GraphQL", logo: "https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg" },
   { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?20120221235433" },
   { name: "Figma", logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" },
+  { name: "SAP", logo: "https://1000logos.net/wp-content/uploads/2023/07/SAP-Logo-768x432.png" },
+  { name: "n8n", logo: "https://1000logos.net/wp-content/uploads/2026/06/n8n-Logo.png" },
   { name: "Sass", logo: "https://cdn.worldvectorlogo.com/logos/sass-1.svg" }
 ];
 

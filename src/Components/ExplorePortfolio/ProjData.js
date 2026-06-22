@@ -5,6 +5,7 @@ import p4 from "../assest/p4.png";
 import p7 from "../assest/p7.png";
 import p6 from "../assest/p6.png";
 import p8 from "../assest/p8.png";
+import p9 from "../assest/p9.png";
 
 const portfolioData = [
   {
@@ -63,6 +64,14 @@ const portfolioData = [
     category: "Dashboard",
     date: "Sep 2024",
   },
+  {
+    title: "Gym sites",
+    img: p9,
+    desc: "Interactive and inbuilt store websites for Gym and online presence of your business.",
+    link: "https://scibiscusindia.github.io/gym_one1/",
+    category: "latest",
+    date: "April 2026",
+  }
 ];
 
 export default portfolioData;

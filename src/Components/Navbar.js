@@ -45,6 +45,9 @@ export default function AppNavbar() {
             <Nav.Link as={NavLink} to="/CareerPage" className="mx-lg-2">
               Career
             </Nav.Link>
+            <Nav.Link href="#contact" className="mx-lg-2">
+              Contact us
+            </Nav.Link>
 
             {/* Mobile App Services Button */}
             <div className="d-lg-none mt-3">

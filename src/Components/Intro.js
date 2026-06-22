@@ -57,9 +57,7 @@ export default function IntroSection() {
               </h1>
 
               <p className="lead text-muted mt-3">
-                We help businesses grow with modern web solutions, clean design,
-                and cutting-edge technology. Let’s build something amazing
-                together.
+                We help businesses grow with modern web solutions, clean design, cutting-edge technology, and powerful AI automation services. Let’s build something amazing together.
               </p>
 
               <div className="mt-4 d-flex justify-content-center justify-content-md-start align-items-center flex-wrap">

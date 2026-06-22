@@ -4,7 +4,7 @@ import p1 from "./assest/p1.png"
 import p2 from "./assest/p2.png"
 import p3 from "./assest/p3.png"
 import p4 from "./assest/p4.png"
-import p7 from "./assest/p7.png"
+import p9 from "./assest/p9.png"
 import p6 from "./assest/p6.png"
 import { Container, Row, Col, Card, Button, } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
@@ -36,10 +36,10 @@ export default function PortfolioSection() {
       link: "https://scibiscusindia.github.io/school_temp_3/",
     },
     {
-      title: "Real State Sites",
-      img: p7,
-      desc: "Interactive websites for management and online presence of your business.",
-      link: "https://tranquil-speculoos-750703.netlify.app/",
+      title: "Gym sites",
+      img: p9,
+      desc: "Interactive and inbuilt store websites for Gym and online presence of your business.",
+      link: "https://scibiscusindia.github.io/gym_one1/",
     },
     {
       title: "Dashboards/CMS",
